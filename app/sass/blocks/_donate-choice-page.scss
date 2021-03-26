@@ -1,0 +1,61 @@
+.donate-form__info {
+	color: $gray_dark;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom: 18px;
+
+	@media(min-width: $desktop) {
+		font-size: 18px;
+		line-height: 27px;
+		margin-bottom: 28px;
+		margin-top: 44px;
+		width: 393px;
+	}	
+}
+
+.donate-form__info--quote {
+	color: $gray_middle;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 300;
+	margin: 0;
+
+	@media(min-width: $desktop) {
+		font-size: 15px;
+		line-height: 22px;
+	}		
+}
+
+.donate-form_select-wrapper--donate-choice {
+
+	&::after {
+	  right:28px;
+	  top: 18px;
+	}
+
+	@media(min-width: $desktop) {
+		width: 361px;
+	}
+}
+
+.donate-form__help-choice {
+	border: 1px solid #DDDDDD;
+	background-color: $secondary-color;
+	border-radius: 6px;
+	font-size: 14px;
+	line-height: 16.4px;
+	font-weight: 300;
+	height: 41px;
+	width: 274px;
+	padding: 0 18px;
+	-webkit-appearance: none;
+ 	-moz-appearance: none;
+  appearance: none;
+  margin-bottom: 20px;
+
+	@media(min-width: $desktop) {
+		width: 361px;
+	}
+}

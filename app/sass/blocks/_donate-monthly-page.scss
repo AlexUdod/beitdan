@@ -1,0 +1,108 @@
+.donate-form__calendar-wrapper {
+	margin-top: 20px;
+
+	@media(min-width: $desktop) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 26px 60px;
+		grid-row-gap: 16px;
+		grid-column-gap: 8px;
+	}
+}
+
+.donate-form__calendar-label {
+	position: relative;
+}
+
+.donate-form__calendar-label span {
+	width: 24px;
+	height: 24px;
+	display: block;
+	background: url(../img/calendar-blue.svg) no-repeat center;
+	background-size: contain;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translate(0, -50%);
+
+	@media(min-width: $desktop) {
+		right: 40px;
+	}
+}
+
+.donate-form__input--calendar {
+	padding-left: 20px;
+	font-size: 24px;
+	line-height: 60px;
+	font-weight: 300;
+	width: 274px;
+	height: 60px;
+	border-radius: 14px;
+	background-color: $secondary-color;
+	border: none;
+
+	&::placeholder {
+		font-size: 18px;
+		line-height: 56px;
+		font-weight: 300;
+		color: $gray_dark;
+	}
+	
+	@media(min-width: $desktop) {
+		padding-left: 18px;
+		width: 174px;
+	}
+}
+
+.donate-form__input--calendar::-moz-placeholder {
+		color: $gray_dark;
+		opacity: 1;
+}
+
+.donate-form_select-wrapper {
+  position: relative;
+  width: 274px;
+
+	&::after {
+		content: "";
+		display: block;
+	  position: absolute;
+	  right:28px;
+	  top: 28px;
+	  z-index: 1;
+	 	width: 7px;
+	  height: 3px;
+	  background: url(../img/arrow-black-down.svg) no-repeat center;
+	}
+
+	@media(min-width: $desktop) {
+		width: 174px;
+	}
+}
+
+.donate-form__period {
+	border: none;
+	background-color: $secondary-color;
+	border-radius: 14px;
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 300;
+	height: 60px;
+	width: 274px;
+	padding: 0 18px;
+	-webkit-appearance: none;
+ 	-moz-appearance: none;
+  	appearance: none;
+
+	@media(min-width: $desktop) {
+		width: 174px;
+	}
+}
+
+.bank-details__text--left {
+
+	
+	@media(min-width: $desktop) {
+		width: 414px;
+	}
+}

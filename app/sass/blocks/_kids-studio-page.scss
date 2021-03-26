@@ -1,0 +1,86 @@
+
+
+.kids-studio-page__list {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 255px;
+	grid-gap: 30px;
+	width: 290px;
+
+	@media(min-width: $desktop) {
+		grid-template-columns: repeat(4, 255px);
+		width: 100%;
+	}
+}
+
+.kids-studio-page-item {
+	min-height: 328px;
+	box-shadow: 0px 9.36709px 18.7342px rgba(156, 156, 156, 0.2);
+	border: 1px solid $gray_light;
+	border-radius: 10px;
+	overflow: hidden;
+	padding-bottom: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	@media(min-width: $desktop) {
+
+	}
+}
+
+.kids-studio-page-item__wrapper-picture {
+	margin-bottom: 10px;
+	width: 100%;
+	height: 187px;
+	border-radius: 10px;
+	overflow: hidden;
+
+	@media(min-width: $desktop) {
+
+	}
+}
+
+.kids-studio-page-item__text {
+	font-size: 18px;
+	line-height: 23.4px;
+	font-weight: 300;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	align-self: flex-start;
+
+	@media(min-width: $desktop) {
+
+	}
+}
+
+.kids-studio-page-item__link {
+	font-size: 14px;
+	line-height: 16.4px;
+	font-weight: 400;
+	color: $blue;
+	border-radius: 30px;
+	border: 1px solid $blue;
+	width: 140px;
+	padding: 8px 31px;
+	text-align: center;
+	margin: 10px auto 0;
+	align-self: flex-end;
+	
+	&:hover {
+		color: $green;
+		border: 1px solid $green;
+	}
+
+	&--inactive {
+		color: $gray-inactive;
+		border: 1px solid $gray-inactive;		
+	}
+
+	@media(min-width: $desktop) {
+
+	}
+}

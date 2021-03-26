@@ -1,0 +1,135 @@
+.location {
+	position: relative;
+	margin-top: -134px;
+	height: 507px;
+
+	@media(min-width: $desktop) {
+
+	}
+}
+
+.location__map-container {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media(min-width: $desktop) {
+		
+	}
+}
+
+.location__map-container img {
+	object-fit: cover;
+	max-width: inherit;
+	height: inherit;
+
+
+	@media(min-width: $desktop) {
+		
+	}
+}
+
+.location__info-wrapper {
+	width: 320px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 550px 15px 40px;
+	position: relative;
+	z-index: 10;
+	margin-top: -684px;
+
+	@media(min-width: $desktop) {
+		width: 1110px;
+		margin-top: -507px;
+		padding: 226px 0 87px;
+	}	
+}
+
+.info-container {
+	padding: 5px 3px 20px 11px;
+	width: 290px;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 20px 40px rgba(156, 156, 156, 0.2);
+	border-radius: 10px;
+
+	@media(min-width: $desktop) {
+		width: 426px;
+		padding: 28px 22px 22px;
+		margin: 0;
+	}
+}
+
+.info-container__text {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom: 14px;
+
+	@media(min-width: $desktop) {
+		font-size: 18px;
+		line-height: 23.4px;
+	}
+}
+
+.info-container__text span {
+	font-weight: 300;
+}
+
+.info-container__link {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 500;
+	color: $primary-color;
+	margin-bottom: 14px;
+	display: flex;
+
+	@media(min-width: $desktop) {
+		font-size: 18px;
+		line-height: 23.4px;		
+	}
+}
+
+.location__map-marker {
+	background-image: url(../img/marker-map.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 105px;
+	height: 99px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	z-index: 10;
+	bottom: 317px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate( -50%, 0);
+
+	&::before {
+		content: '';
+		display: block;
+		width: 65px;
+		height: 58px;
+		background: url(../img/logo-marker.png) no-repeat center;
+		margin-top: -30px;
+
+		@media(min-width: $desktop) {
+			background: url(../img/logo-marker-desktop.png) no-repeat center;
+			width: 93px;
+			height: 83px;
+			margin: -7px 0 0 32px;
+		}
+	}
+
+	@media(min-width: $desktop) {
+		background-image: url(../img/marker-map-desktop.svg);
+		width: 153px;
+		height: 143px;
+		bottom: 136px;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}

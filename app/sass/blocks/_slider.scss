@@ -1,0 +1,84 @@
+
+.slider {
+	position: relative;
+	margin: 0 auto;
+}
+
+.slider__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.slider__item {
+	background: linear-gradient(180deg, #081C2D 0%, #027AB0 100%);
+	display: none;
+	font-size: 50px;
+
+	&--active {
+		display: flex;
+	}
+}
+
+.slider__arrow {
+	display: none;
+
+	padding: 0;
+	border: none;
+
+	width: 43px;
+	height: 34px;
+	position: absolute;
+	top: 50%;
+	margin-bottom: -50%;
+	transform: translate( 0, -50%);	
+
+	@media (min-width: $desktop) {
+		display: block;
+	}	
+
+	&--left {
+		left: 20px;
+		background: url(../img/arrow-left-white.svg) no-repeat center;
+	}
+
+	&--right {
+		right: 20px;
+		background: url(../img/arrow-right-white.svg) no-repeat center;
+	}
+}
+
+.slider__pagitators-container {
+	position: absolute;
+	z-index: 10;
+	display: grid;
+	grid-template-columns: repeat(5, 20px);
+	grid-gap: 10px;
+
+	bottom: 20px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
+
+	@media (min-width: $desktop) {
+		bottom: 30px;
+	}	
+}
+
+.slider__paginator {
+	padding: 0;
+	border: none;
+
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: $secondary-color;
+
+	&--active {
+		background-color: $blue;
+	}
+
+	&:focus{
+		outline: none;
+	}
+}

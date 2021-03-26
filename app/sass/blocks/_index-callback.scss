@@ -1,0 +1,109 @@
+.callback {
+	width: 290px;
+	margin: 0 auto;
+	border-radius: 16px;
+	padding: 22px 18px;
+	background-color: $blue;
+	background-image: url(../img/mask-callback.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	position: relative;
+	z-index: 100;
+
+	@media(min-width: $desktop) {
+		width: 1110px;
+		background-image: url(../img/mask-callback-desktop.png);
+		padding: 15px 142px 34px;
+	}
+}
+
+.callback__text {
+	font-size: 18px;
+	line-height: 23.4px;
+	margin: 0 auto 20px;
+	color: $secondary-color;
+	text-align: center;
+	width: 186px;
+	font-weight: 400;
+	padding-bottom: 20px;
+
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 54px;
+		height: 1px;
+		background-color: $secondary-color;
+
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-right: 50%;
+		transform: translate(-50%, 0);
+
+		@media(min-width: $desktop) {
+
+		}
+	}
+
+	@media(min-width: $desktop) {
+		font-size: 24px;
+		line-height: 31.2px;
+		width: 422px;
+		padding-bottom: 15px;
+		margin-bottom: 30px;
+	}
+}
+
+.callback__form {
+	display: grid;
+	grid-row-gap: 20px;
+
+	@media(min-width: $desktop) {
+		grid-template-columns: repeat(3, 255px);
+		grid-column-gap: 30px;
+	}
+}
+
+.callback__label {
+
+
+	@media(min-width: $desktop) {
+		
+	}
+}
+
+.callback__field {
+	width: 100%;
+	height: 50px;
+	border-radius: 40px;
+	border: 1px solid $secondary-color;
+	background-color: inherit;
+
+	&::placeholder {
+		color: $secondary-color;
+		font-size: 16px;
+		line-height: 20.8px;
+		padding-left: 18px;
+	}
+
+	@media(min-width: $desktop) {
+		
+	}
+}
+
+.callback__submit-btn {
+	font-size: 18px;
+	line-height: 23.4px;
+	color: $blue;
+	background-color: $secondary-color;
+	border-radius: 40px;
+	border: none;
+	min-height: 50px;
+
+	@media(min-width: $desktop) {
+		
+	}
+}

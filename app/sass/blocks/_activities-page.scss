@@ -1,0 +1,253 @@
+.activities-page__content-text {
+	margin: 0 auto 40px;
+	background-color: $gray_light;
+	color: $gray_dark;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 20px 24px;
+	max-width: 500px;
+
+	@media (min-width: $desktop) {
+		font-size: 18px;
+		line-height: 25.2px;		
+		padding: 24px 30px;
+		max-width: 730px;
+	}
+}
+
+.activities-page-list {
+	min-width: 290px;
+	list-style: none;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-row-gap: 50px;
+
+	@media (min-width: $desktop) {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.activities-page-item {
+	margin: 0 auto;
+	display: grid;
+	max-width: 540px;
+	grid-template-columns: 100%;
+	grid-row-gap: 10px;
+
+	@media (min-width: $desktop) {
+		grid-template-columns: 540px 540px;
+		grid-column-gap: 30px;
+		max-width: inherit;
+	}
+}
+
+.activities-page-item__picture-wrapper {
+	border-radius: 10px;
+	position: relative;
+
+	@media (min-width: $desktop) {
+
+	}
+}
+
+.activities-page-item__date {
+	margin: 0;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	z-index: 10;
+	background: rgba(44, 38, 36, 0.8);
+	border-radius: 3px 0px 0px 3px;
+	color: $secondary-color;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 300;
+	padding: 4px;
+
+	@media (min-width: $desktop) {
+		font-size: 16px;
+		line-height: 19.2px;
+		padding: 4px 8px;
+	}
+}
+
+.activities-page-item__date span {
+	font-weight: 700;
+
+	@media (min-width: $desktop) {
+
+	}	
+}
+
+.activities-page-item__info-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@media (min-width: $desktop) {
+
+	}
+}
+
+.activities-page-item__title {
+	width: 100%;
+	margin: 0;
+	color: $gray_dark;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+	margin-bottom: 12px;
+
+	@media (min-width: $desktop) {
+		font-size: 32px;
+		line-height: 38.4px;
+	}
+}
+
+.activities-page-item__calendar-wrapper {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.activities-page-item__calendar {
+	font-size: 10px;
+	line-height: 11.7px;
+	color: $white_dark;
+	margin-right: 26px;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin-right: 4px;
+		background: url(../img/calendar.svg) no-repeat center;
+
+		@media(min-width: $desktop) {
+			width: 20px;
+			height: 16px;
+			margin-bottom: -2px;
+			margin-right: 11px;
+		}
+	}
+
+	@media(min-width: $desktop) {
+		font-size: 14px;
+		line-height: 16.4px;
+	}
+}
+
+.activities-page-item__view {
+	font-size: 10px;
+	line-height: 11.7px;
+	color: $white_dark;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin-right: 4px;
+		background: url(../img/eye.svg) no-repeat center;
+
+		@media(min-width: $desktop) {
+			width: 20px;
+			height: 12px;
+			margin-right: 8px;
+		}
+	}
+
+	@media(min-width: $desktop) {
+		font-size: 14px;
+		line-height: 16.4px;		
+	}
+}
+
+.activities-page-item__text {
+	width: 100%;
+	color: $gray_dark;
+	margin: 0px 0 8px;
+	font-size: 14px;
+	line-height: 18px;
+
+	@media (min-width: $desktop) {
+		font-size: 17px;
+		line-height: 22.1px;
+	}
+}
+
+.activities-page-item__link {
+	font-size: 12px;
+	line-height: 14px;
+	color: $blue;
+	border: 1px solid $blue;
+	padding: 6px 20px;
+	border-radius: 30px;
+	align-self: flex-end;
+	margin-top: 12px;
+	height: 30px;
+
+	@media (min-width: $desktop) {
+		font-size: 14px;
+		line-height: 16.4px;
+		padding: 8px 30px;
+		height: 32px;
+		margin-top: 26px;
+	}
+}
+
+.activities-page__pagination-wrapper {
+	width: 200px;
+	margin: 40px auto 0;
+	display: flex;
+	justify-content: space-between;
+
+	@media (min-width: $desktop) {
+		margin: 85px auto 0;
+	}
+}
+
+.activities-page__paginater-link {
+	font-size: 18px;
+	line-height: 23.4px;
+	color: $primary-color;
+	font-weight: 300;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+
+	&--active {
+		background-color: $green;
+		color: $secondary-color;
+
+	}
+
+	&:hover {
+		background-color: $blue;
+		color: $secondary-color;
+	}
+
+	@media (min-width: $desktop) {
+
+	}
+}
+
+.activities-page__pagination-nev {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	font-size: 18px;
+	line-height: 23.4px;
+
+	@media (min-width: $desktop) {
+
+	}
+}
